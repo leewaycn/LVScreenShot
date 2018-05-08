@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+LVManager.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,8 +36,11 @@
 
                   [self.tableView reloadData];
 
- 
 
+    [[LVManager share] asyn_tailorImageWithimageName:[UIImage imageNamed:@""]  CompletedBlock:^(UIImage *newImage) {
+
+        
+    }];
 }
     -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
         return datasource.count;

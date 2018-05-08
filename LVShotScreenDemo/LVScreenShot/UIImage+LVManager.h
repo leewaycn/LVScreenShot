@@ -26,7 +26,7 @@
      - imageName--传头头像名称
      - parameter completed:    异步完成回调(主线程回调)
      */
-    -(void)asyn_tailorImageWithBlock:(UIImage*(^)(UIImage*imageName))completed;
+    -(void)asyn_tailorImageWithimageName:(UIImage*)imageName CompletedBlock:(void  (^)(UIImage *newImage))completed;
 //- (void)someMethodThatTakesABlock:(returnType (^nullability)(parameterTypes))blockName;
 
     /**
@@ -42,15 +42,15 @@
      - cornerRadius --要设置圆角的大小
      - parameter completed:    异步完成回调(主线程回调)
      */
-    -(void)asyn_tailoringImageWithBlock:(UIImage *(^)(UIImage *imageName,CGFloat cornerRadius))completed;
 
+    -(void)asyn_tailoringImageWithImage:(UIImage*)imageName  cornerRadius:(CGFloat)radius Block:(UIImage *(^)(UIImage *newImage))completed;
     /**
      ** 绘图方式将图片裁剪成圆角并添加边框
      - imageName --传头头像名称
      - borderWidth --边框大小
      - borderColor --边框颜色
      */
-    -(UIImage*)tailoringImageLayerWithBorderWidth:(CGFloat)borderWidth BorderColor:(UIColor *)borderColor ;
+    -(UIImage*)tailoringImageLayerWithimageName:(UIImage*)imageName BorderWidth:(CGFloat)borderWidth BorderColor:(UIColor *)borderColor ;
 
     /**
      ** 异步绘图方式将图片裁剪成圆角并添加边框
@@ -59,7 +59,8 @@
      - borderColor --边框颜色
      - parameter completed:    异步完成回调(主线程回调)
      */
-    -(void)async_tailoringImageLayerWithcomleted:(UIImage*(^)(UIImage *imageName ,CGFloat borderWidth ,UIColor *borderColor))completed;
+    -(void)async_tailoringImageLayerWithImage: (UIImage *)imageName borderWidth:(CGFloat)width  borderColor:(UIColor *)color completed:(void(^)(UIImage*newImage))completed;
+
 
 
     /**
@@ -77,7 +78,7 @@
      - parameter completed:    异步完成回调(主线程回调)
      */
 
-    -(void)async_shotImageWithCompltedBlock:(UIImage*(^)(UIImageView *imageView,UIView*bgView))completed;
+    -(void)async_shotImageWithimageView:(UIImageView *)imageView bgView:(UIView*)bgView CompltedBlock:(void(^)(UIImage* newImage))completed;
 
     /**
      ** 用手势擦除图片
@@ -93,14 +94,14 @@
      - image --传图片
      - filter -- 传入滤镜
      */
-    -(UIImage*)imageFilterHandle:(UIImage*)image :Filtername:(NSString*)filterName;
+    -(UIImage*)imageFilterHandle:(UIImage*)image Filtername:(NSString*)filterName;
     /**
      ** 图片滤镜处理篇
      - image --传图片
      - filter -- 传入滤镜
      - parameter completed:    异步完成回调(主线程回调)
      */
-    -(void)async_imageFilterHandleWithCompletedBlock:(UIImage*(^)(UIImage* image,NSString *filterName))completed;
+    -(void)async_imageFilterHandleWithimage:(UIImage* )image filterName:( NSString *)filterName CompletedBlock:(void(^)(UIImage* newImage))completed;
 
 
 
