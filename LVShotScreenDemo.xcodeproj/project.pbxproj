@@ -14,6 +14,8 @@
 		5879DBAC20A1916E009E90CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5879DBAA20A1916E009E90CE /* LaunchScreen.storyboard */; };
 		5879DBAF20A1916E009E90CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBAE20A1916E009E90CE /* main.m */; };
 		5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBB720A195D0009E90CE /* UIImage+LVManager.m */; };
+		5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */; };
+		5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		5879DBAE20A1916E009E90CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5879DBB620A195D0009E90CE /* UIImage+LVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LVManager.h"; sourceTree = "<group>"; };
 		5879DBB720A195D0009E90CE /* UIImage+LVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LVManager.m"; sourceTree = "<group>"; };
+		5879DBB920A1AFAE009E90CE /* UIView+LVShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LVShot.h"; sourceTree = "<group>"; };
+		5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LVShot.m"; sourceTree = "<group>"; };
+		5879DBBC20A1F069009E90CE /* WKWebView+LVShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+LVShot.h"; sourceTree = "<group>"; };
+		5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+LVShot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 			children = (
 				5879DBB620A195D0009E90CE /* UIImage+LVManager.h */,
 				5879DBB720A195D0009E90CE /* UIImage+LVManager.m */,
+				5879DBB920A1AFAE009E90CE /* UIView+LVShot.h */,
+				5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */,
+				5879DBBC20A1F069009E90CE /* WKWebView+LVShot.h */,
+				5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */,
 			);
 			path = LVScreenShot;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 				5879DBAF20A1916E009E90CE /* main.m in Sources */,
 				5879DBA120A1916E009E90CE /* AppDelegate.m in Sources */,
 				5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */,
+				5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */,
+				5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
