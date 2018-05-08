@@ -13,6 +13,8 @@
 
     {
         NSMutableArray *datasource ;
+        NSMutableArray *vcClassnames;
+
     }
     
 @end
@@ -21,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.view.backgroundColor = [UIColor whiteColor];
 
 
     datasource = @[
@@ -35,6 +39,17 @@
                    @"图片滤镜(高级)--饱和度，高斯模糊，老电影"];
 
                   [self.tableView reloadData];
+
+
+    vcClassnames = @[@"ViewShotViewController",
+                     @"ScrollViewShotViewController",
+                     @"WebViewShotViewController",
+                     @"WKWebViewShotVC",
+                     @"ImageComposeVC",
+                     @"ShotImageViewVC",
+                     @"ClearImageViewVC",
+                     @"ImageFilterVC",
+                     @"SeniorImageFilter"];
 
 
     [[LVManager share] asyn_tailorImageWithimageName:[UIImage imageNamed:@""]  CompletedBlock:^(UIImage *newImage) {
@@ -60,7 +75,16 @@
 
     -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+        NSString *classnaem  = vcClassnames[indexPath.row];
+
+        Class class = NSClassFromString(classnaem);
+
+        UIViewController *vc = [[class alloc]init];
+        vc.title = datasource[indexPath.row];
+
+        [self.navigationController pushViewController:vc animated:YES];
     }
+
 
 
 - (void)didReceiveMemoryWarning {

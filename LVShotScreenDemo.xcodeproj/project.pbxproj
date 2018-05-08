@@ -17,6 +17,15 @@
 		5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */; };
 		5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */; };
 		5879DBC120A1FF12009E90CE /* UIScrollView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */; };
+		5879DBC520A2059D009E90CE /* ViewShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBC420A2059D009E90CE /* ViewShotViewController.m */; };
+		5879DBC820A205AA009E90CE /* ScrollViewShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBC720A205AA009E90CE /* ScrollViewShotViewController.m */; };
+		5879DBCB20A205B4009E90CE /* WebViewShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBCA20A205B4009E90CE /* WebViewShotViewController.m */; };
+		5879DBCE20A205C5009E90CE /* WKWebViewShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBCD20A205C5009E90CE /* WKWebViewShotVC.m */; };
+		5879DBD120A205D2009E90CE /* ImageComposeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD020A205D2009E90CE /* ImageComposeVC.m */; };
+		5879DBD420A205DE009E90CE /* ShotImageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD320A205DE009E90CE /* ShotImageViewVC.m */; };
+		5879DBD720A205EB009E90CE /* ClearImageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD620A205EB009E90CE /* ClearImageViewVC.m */; };
+		5879DBDA20A205F6009E90CE /* ImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD920A205F6009E90CE /* ImageFilterVC.m */; };
+		5879DBDD20A20600009E90CE /* SeniorImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBDC20A20600009E90CE /* SeniorImageFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,24 @@
 		5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+LVShot.m"; sourceTree = "<group>"; };
 		5879DBBF20A1FF12009E90CE /* UIScrollView+LVShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LVShot.h"; sourceTree = "<group>"; };
 		5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LVShot.m"; sourceTree = "<group>"; };
+		5879DBC320A2059D009E90CE /* ViewShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewShotViewController.h; sourceTree = "<group>"; };
+		5879DBC420A2059D009E90CE /* ViewShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewShotViewController.m; sourceTree = "<group>"; };
+		5879DBC620A205AA009E90CE /* ScrollViewShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewShotViewController.h; sourceTree = "<group>"; };
+		5879DBC720A205AA009E90CE /* ScrollViewShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewShotViewController.m; sourceTree = "<group>"; };
+		5879DBC920A205B4009E90CE /* WebViewShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewShotViewController.h; sourceTree = "<group>"; };
+		5879DBCA20A205B4009E90CE /* WebViewShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewShotViewController.m; sourceTree = "<group>"; };
+		5879DBCC20A205C5009E90CE /* WKWebViewShotVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewShotVC.h; sourceTree = "<group>"; };
+		5879DBCD20A205C5009E90CE /* WKWebViewShotVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewShotVC.m; sourceTree = "<group>"; };
+		5879DBCF20A205D2009E90CE /* ImageComposeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComposeVC.h; sourceTree = "<group>"; };
+		5879DBD020A205D2009E90CE /* ImageComposeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageComposeVC.m; sourceTree = "<group>"; };
+		5879DBD220A205DE009E90CE /* ShotImageViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShotImageViewVC.h; sourceTree = "<group>"; };
+		5879DBD320A205DE009E90CE /* ShotImageViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShotImageViewVC.m; sourceTree = "<group>"; };
+		5879DBD520A205EB009E90CE /* ClearImageViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearImageViewVC.h; sourceTree = "<group>"; };
+		5879DBD620A205EB009E90CE /* ClearImageViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearImageViewVC.m; sourceTree = "<group>"; };
+		5879DBD820A205F6009E90CE /* ImageFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilterVC.h; sourceTree = "<group>"; };
+		5879DBD920A205F6009E90CE /* ImageFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilterVC.m; sourceTree = "<group>"; };
+		5879DBDB20A20600009E90CE /* SeniorImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeniorImageFilter.h; sourceTree = "<group>"; };
+		5879DBDC20A20600009E90CE /* SeniorImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeniorImageFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +102,7 @@
 				5879DBA020A1916E009E90CE /* AppDelegate.m */,
 				5879DBA220A1916E009E90CE /* ViewController.h */,
 				5879DBA320A1916E009E90CE /* ViewController.m */,
+				5879DBC220A20539009E90CE /* Examples */,
 				5879DBA520A1916E009E90CE /* Main.storyboard */,
 				5879DBA820A1916E009E90CE /* Assets.xcassets */,
 				5879DBAA20A1916E009E90CE /* LaunchScreen.storyboard */,
@@ -97,6 +125,31 @@
 				5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */,
 			);
 			path = LVScreenShot;
+			sourceTree = "<group>";
+		};
+		5879DBC220A20539009E90CE /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				5879DBC320A2059D009E90CE /* ViewShotViewController.h */,
+				5879DBC420A2059D009E90CE /* ViewShotViewController.m */,
+				5879DBC620A205AA009E90CE /* ScrollViewShotViewController.h */,
+				5879DBC720A205AA009E90CE /* ScrollViewShotViewController.m */,
+				5879DBC920A205B4009E90CE /* WebViewShotViewController.h */,
+				5879DBCA20A205B4009E90CE /* WebViewShotViewController.m */,
+				5879DBCC20A205C5009E90CE /* WKWebViewShotVC.h */,
+				5879DBCD20A205C5009E90CE /* WKWebViewShotVC.m */,
+				5879DBCF20A205D2009E90CE /* ImageComposeVC.h */,
+				5879DBD020A205D2009E90CE /* ImageComposeVC.m */,
+				5879DBD220A205DE009E90CE /* ShotImageViewVC.h */,
+				5879DBD320A205DE009E90CE /* ShotImageViewVC.m */,
+				5879DBD520A205EB009E90CE /* ClearImageViewVC.h */,
+				5879DBD620A205EB009E90CE /* ClearImageViewVC.m */,
+				5879DBD820A205F6009E90CE /* ImageFilterVC.h */,
+				5879DBD920A205F6009E90CE /* ImageFilterVC.m */,
+				5879DBDB20A20600009E90CE /* SeniorImageFilter.h */,
+				5879DBDC20A20600009E90CE /* SeniorImageFilter.m */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +223,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5879DBA420A1916E009E90CE /* ViewController.m in Sources */,
+				5879DBD420A205DE009E90CE /* ShotImageViewVC.m in Sources */,
 				5879DBAF20A1916E009E90CE /* main.m in Sources */,
 				5879DBC120A1FF12009E90CE /* UIScrollView+LVShot.m in Sources */,
+				5879DBC820A205AA009E90CE /* ScrollViewShotViewController.m in Sources */,
+				5879DBCE20A205C5009E90CE /* WKWebViewShotVC.m in Sources */,
+				5879DBD120A205D2009E90CE /* ImageComposeVC.m in Sources */,
+				5879DBDD20A20600009E90CE /* SeniorImageFilter.m in Sources */,
+				5879DBDA20A205F6009E90CE /* ImageFilterVC.m in Sources */,
+				5879DBC520A2059D009E90CE /* ViewShotViewController.m in Sources */,
 				5879DBA120A1916E009E90CE /* AppDelegate.m in Sources */,
+				5879DBCB20A205B4009E90CE /* WebViewShotViewController.m in Sources */,
 				5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */,
+				5879DBD720A205EB009E90CE /* ClearImageViewVC.m in Sources */,
 				5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */,
 				5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */,
 			);
