@@ -16,6 +16,7 @@
 		5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBB720A195D0009E90CE /* UIImage+LVManager.m */; };
 		5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */; };
 		5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */; };
+		5879DBC120A1FF12009E90CE /* UIScrollView+LVShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LVShot.m"; sourceTree = "<group>"; };
 		5879DBBC20A1F069009E90CE /* WKWebView+LVShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+LVShot.h"; sourceTree = "<group>"; };
 		5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+LVShot.m"; sourceTree = "<group>"; };
+		5879DBBF20A1FF12009E90CE /* UIScrollView+LVShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LVShot.h"; sourceTree = "<group>"; };
+		5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LVShot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +70,10 @@
 		5879DB9E20A1916E009E90CE /* LVShotScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5879DBB520A195A4009E90CE /* LVScreenShot */,
 				5879DB9F20A1916E009E90CE /* AppDelegate.h */,
 				5879DBA020A1916E009E90CE /* AppDelegate.m */,
 				5879DBA220A1916E009E90CE /* ViewController.h */,
-				5879DBB520A195A4009E90CE /* LVScreenShot */,
 				5879DBA320A1916E009E90CE /* ViewController.m */,
 				5879DBA520A1916E009E90CE /* Main.storyboard */,
 				5879DBA820A1916E009E90CE /* Assets.xcassets */,
@@ -90,6 +93,8 @@
 				5879DBBA20A1AFAE009E90CE /* UIView+LVShot.m */,
 				5879DBBC20A1F069009E90CE /* WKWebView+LVShot.h */,
 				5879DBBD20A1F069009E90CE /* WKWebView+LVShot.m */,
+				5879DBBF20A1FF12009E90CE /* UIScrollView+LVShot.h */,
+				5879DBC020A1FF12009E90CE /* UIScrollView+LVShot.m */,
 			);
 			path = LVScreenShot;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			files = (
 				5879DBA420A1916E009E90CE /* ViewController.m in Sources */,
 				5879DBAF20A1916E009E90CE /* main.m in Sources */,
+				5879DBC120A1FF12009E90CE /* UIScrollView+LVShot.m in Sources */,
 				5879DBA120A1916E009E90CE /* AppDelegate.m in Sources */,
 				5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */,
 				5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */,

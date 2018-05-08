@@ -20,6 +20,8 @@
     -(void)shotScreenContentScrollCapture:(void(^)(UIImage*screenShotImage))completion;
     
     -(void)shotScreenContentScrollPageDrawWithIndex:(int)index MaxIndex:(int)maxIndex DrawCallBack:(void (^)(void))callBack;
+
+
     
 
 @end
