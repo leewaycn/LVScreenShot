@@ -13,6 +13,7 @@
 		5879DBA920A1916E009E90CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5879DBA820A1916E009E90CE /* Assets.xcassets */; };
 		5879DBAC20A1916E009E90CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5879DBAA20A1916E009E90CE /* LaunchScreen.storyboard */; };
 		5879DBAF20A1916E009E90CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBAE20A1916E009E90CE /* main.m */; };
+		5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBB720A195D0009E90CE /* UIImage+LVManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5879DBAB20A1916E009E90CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5879DBAD20A1916E009E90CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5879DBAE20A1916E009E90CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5879DBB620A195D0009E90CE /* UIImage+LVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LVManager.h"; sourceTree = "<group>"; };
+		5879DBB720A195D0009E90CE /* UIImage+LVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LVManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				5879DB9F20A1916E009E90CE /* AppDelegate.h */,
 				5879DBA020A1916E009E90CE /* AppDelegate.m */,
 				5879DBA220A1916E009E90CE /* ViewController.h */,
+				5879DBB520A195A4009E90CE /* LVScreenShot */,
 				5879DBA320A1916E009E90CE /* ViewController.m */,
 				5879DBA520A1916E009E90CE /* Main.storyboard */,
 				5879DBA820A1916E009E90CE /* Assets.xcassets */,
@@ -69,6 +73,15 @@
 				5879DBAE20A1916E009E90CE /* main.m */,
 			);
 			path = LVShotScreenDemo;
+			sourceTree = "<group>";
+		};
+		5879DBB520A195A4009E90CE /* LVScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				5879DBB620A195D0009E90CE /* UIImage+LVManager.h */,
+				5879DBB720A195D0009E90CE /* UIImage+LVManager.m */,
+			);
+			path = LVScreenShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 				5879DBA420A1916E009E90CE /* ViewController.m in Sources */,
 				5879DBAF20A1916E009E90CE /* main.m in Sources */,
 				5879DBA120A1916E009E90CE /* AppDelegate.m in Sources */,
+				5879DBB820A195D0009E90CE /* UIImage+LVManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
