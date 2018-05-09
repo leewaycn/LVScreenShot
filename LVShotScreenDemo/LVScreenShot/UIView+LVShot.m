@@ -16,70 +16,70 @@ static const NSString * DDGViewScreenShotKey_IsShoting = @"DDGViewScreenShotKey_
 @implementation UIView (LVShot)
 
 
-    -(void)setIsShoting:(BOOL)isShoting{
-        NSNumber *num = [NSNumber numberWithBool:isShoting];
-        objc_setAssociatedObject(self, &DDGViewScreenShotKey_IsShoting, num, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    -(BOOL)isShoting{
+-(void)setIsShoting:(BOOL)isShoting{
+    NSNumber *num = [NSNumber numberWithBool:isShoting];
+    objc_setAssociatedObject(self, &DDGViewScreenShotKey_IsShoting, num, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(BOOL)isShoting{
 
-        NSNumber *number = objc_getAssociatedObject(self,&DDGViewScreenShotKey_IsShoting);
+    NSNumber *number = objc_getAssociatedObject(self,&DDGViewScreenShotKey_IsShoting);
 
-        if(number==nil){
-            return NO;
-        }
-
-        if(number ){
-            return number.boolValue;
-        }
+    if(number==nil){
         return NO;
     }
 
-    -(BOOL)DDGContainsWKWebView{
+    if(number ){
+        return number.boolValue;
+    }
+    return NO;
+}
 
-        if([self isKindOfClass:[WKWebView class]]){
+-(BOOL)DDGContainsWKWebView{
 
+    if([self isKindOfClass:[WKWebView class]]){
+
+        return YES;
+    }
+
+    for (UIView *sbView in self.subviews) {
+
+
+        if([sbView DDGContainsWKWebView]){
             return YES;
         }
-
-        for (UIView *sbView in self.subviews) {
-
-
-            if([sbView DDGContainsWKWebView]){
-                return YES;
-            }
-        }
-        return NO;
-
     }
-    -(void)DDGScreenShotWithCompletionHandle:(void(^)(UIImage*screenShotImage))completion{
+    return NO;
 
-        self.isShoting = YES;
+}
+-(void)DDGScreenShotWithCompletionHandle:(void(^)(UIImage*screenShotImage))completion{
 
-        CGRect bounds = self.bounds;
+    self.isShoting = YES;
 
-        UIGraphicsBeginImageContextWithOptions(bounds.size, NO, [UIScreen mainScreen].scale);
+    CGRect bounds = self.bounds;
 
-        CGContextRef context = UIGraphicsGetCurrentContext();
+    UIGraphicsBeginImageContextWithOptions(bounds.size, NO, [UIScreen mainScreen].scale);
 
-        CGContextSaveGState(context);
-        CGContextTranslateCTM(context, -self.frame.origin.x, -self.frame.origin.y);
+    CGContextRef context = UIGraphicsGetCurrentContext();
 
-        if([ self DDGContainsWKWebView ]){
-            [self drawViewHierarchyInRect:bounds afterScreenUpdates:YES];
-        }else{
-            [self.layer renderInContext:context];
-        }
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, -self.frame.origin.x, -self.frame.origin.y);
 
-        UIImage *shotImage  = UIGraphicsGetImageFromCurrentImageContext();
-        CGContextRestoreGState(context);
-        UIGraphicsEndImageContext();
-
-        self.isShoting = NO;
-
-        completion(shotImage);
-
-
+    if([ self DDGContainsWKWebView ]){
+        [self drawViewHierarchyInRect:bounds afterScreenUpdates:YES];
+    }else{
+        [self.layer renderInContext:context];
     }
+
+    UIImage *shotImage  = UIGraphicsGetImageFromCurrentImageContext();
+    CGContextRestoreGState(context);
+    UIGraphicsEndImageContext();
+
+    self.isShoting = NO;
+
+    completion(shotImage);
+
+
+}
 
 
 

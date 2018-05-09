@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.title = @"Copy-From-Swift-Version @DDGScreenShot";
+
     self.view.backgroundColor = [UIColor whiteColor];
 
 

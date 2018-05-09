@@ -12,11 +12,11 @@
 
 
 
-    @property (nonatomic,assign)BOOL  isShoting;
-    -(BOOL)DDGContainsWKWebView;
+@property (nonatomic,assign)BOOL  isShoting;
+-(BOOL)DDGContainsWKWebView;
 
 
-    -(void)DDGScreenShotWithCompletionHandle:(void(^)(UIImage*screenShotImage))completion;
-    
+-(void)DDGScreenShotWithCompletionHandle:(void(^)(UIImage*screenShotImage))completion;
+
 
 @end

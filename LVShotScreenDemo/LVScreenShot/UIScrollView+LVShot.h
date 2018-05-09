@@ -11,9 +11,9 @@
 @interface UIScrollView (LVShot)
 
 
-    -(void)DDGContentScreenShot:(void(^)(UIImage*screenShotImage))completion;
+-(void)DDGContentScreenShot:(void(^)(UIImage*screenShotImage))completion;
 
-    -(void)DDGContentScrollScreenShot:(void(^)(UIImage*screenShotImage))completion;
+-(void)DDGContentScrollScreenShot:(void(^)(UIImage*screenShotImage))completion;
 
 
 @end
@@ -21,7 +21,7 @@
 
 @interface UIWebView (LVShot)
 
-    -(void)DDGContentScreenShot:(void(^)(UIImage*screenShotImage))completion;
-    -(void)DDGContentScrollScreenShot:(void(^)(UIImage*screenShotImage))completion;
+-(void)DDGContentScreenShot:(void(^)(UIImage*screenShotImage))completion;
+-(void)DDGContentScrollScreenShot:(void(^)(UIImage*screenShotImage))completion;
 
-    @end
+@end
