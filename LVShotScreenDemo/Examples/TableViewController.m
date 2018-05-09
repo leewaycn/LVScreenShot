@@ -41,6 +41,18 @@
 
     [ self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
+
+
+    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:
+                                          UIActivityIndicatorViewStyleWhiteLarge];
+    [ self.view addSubview:indicator];
+    indicator.frame = CGRectMake(width/2-15, 70, 30, 30);
+    indicator.backgroundColor = [UIColor blackColor];
+    indicator.hidesWhenStopped = YES;
+    [self.view addSubview:indicator];
+
+    activity = indicator;
+    
 }
 
 - (void)didReceiveMemoryWarning {
