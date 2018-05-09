@@ -56,41 +56,41 @@
 
 -(void)DDGContentScreenShotWithoutOffset:(void(^)(UIImage*screenShotImage))completion{
 
-UIView *containerView = [[UIView alloc]initWithFrame:self.bounds ];
-CGRect bakFrame = self.frame;
-UIView *bakSuperView = self.superview;
-NSInteger bakIndex =[ self.superview.subviews indexOfObject:self];
+    UIView *containerView = [[UIView alloc]initWithFrame:self.bounds ];
+    CGRect bakFrame = self.frame;
+    UIView *bakSuperView = self.superview;
+    NSInteger bakIndex =[ self.superview.subviews indexOfObject:self];
 
 
-[self removeFromSuperview];
-[containerView addSubview:self];
-CGSize totalSize = self.scrollView.contentSize;
+    [self removeFromSuperview];
+    [containerView addSubview:self];
+    CGSize totalSize = self.scrollView.contentSize;
 
-NSInteger page = floor(totalSize.height/containerView.bounds.size.height);
-self.frame = CGRectMake(0, 0, containerView.frame.size.width, self.scrollView.contentSize.height);
+    NSInteger page = floor(totalSize.height/containerView.bounds.size.height);
+    self.frame = CGRectMake(0, 0, containerView.frame.size.width, self.scrollView.contentSize.height);
 
+        UIGraphicsBeginImageContextWithOptions(totalSize, NO, UIScreen.mainScreen.scale);
 
+    __weak typeof(self) weakSelf = self;
 
-__weak typeof(self) weakSelf = self;
-
-[self DDGContentPageDrawWithUIView:containerView Index:0 MaxIndex:(int)page DrawCallBack:^{
-
-
-    __strong typeof(weakSelf) StrongSelf = weakSelf;
-
-    UIImage *screnShotImage = UIGraphicsGetImageFromCurrentImageContext();
-
-    UIGraphicsEndImageContext();
-
-    [StrongSelf removeFromSuperview];
-    [bakSuperView insertSubview:StrongSelf atIndex:bakIndex];
-    StrongSelf.frame = bakFrame;
-    [containerView removeFromSuperview];
-
-    completion(screnShotImage);
+    [self DDGContentPageDrawWithUIView:containerView Index:0 MaxIndex:(int)page DrawCallBack:^{
 
 
-}];
+        __strong typeof(weakSelf) StrongSelf = weakSelf;
+
+        UIImage *screnShotImage = UIGraphicsGetImageFromCurrentImageContext();
+
+        UIGraphicsEndImageContext();
+
+        [StrongSelf removeFromSuperview];
+        [bakSuperView insertSubview:StrongSelf atIndex:bakIndex];
+        StrongSelf.frame = bakFrame;
+        [containerView removeFromSuperview];
+
+        completion(screnShotImage);
+
+
+    }];
 
 
 }
@@ -105,6 +105,9 @@ __weak typeof(self) weakSelf = self;
     self.frame = myFrame;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+        [targetView drawViewHierarchyInRect:splitFrame afterScreenUpdates:YES];
+
         if(index <maxIndex){
             [self DDGContentPageDrawWithUIView:targetView Index:index+1 MaxIndex:maxIndex DrawCallBack:callBack];
         }else{
