@@ -26,6 +26,8 @@
 		5879DBD720A205EB009E90CE /* ClearImageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD620A205EB009E90CE /* ClearImageViewVC.m */; };
 		5879DBDA20A205F6009E90CE /* ImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBD920A205F6009E90CE /* ImageFilterVC.m */; };
 		5879DBDD20A20600009E90CE /* SeniorImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBDC20A20600009E90CE /* SeniorImageFilter.m */; };
+		5879DBE020A2A152009E90CE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBDF20A2A152009E90CE /* TableViewController.m */; };
+		5879DBE320A2A3D9009E90CE /* ImageMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879DBE220A2A3D9009E90CE /* ImageMarkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		5879DBD920A205F6009E90CE /* ImageFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilterVC.m; sourceTree = "<group>"; };
 		5879DBDB20A20600009E90CE /* SeniorImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeniorImageFilter.h; sourceTree = "<group>"; };
 		5879DBDC20A20600009E90CE /* SeniorImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeniorImageFilter.m; sourceTree = "<group>"; };
+		5879DBDE20A2A152009E90CE /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5879DBDF20A2A152009E90CE /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5879DBE120A2A3D9009E90CE /* ImageMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageMarkViewController.h; sourceTree = "<group>"; };
+		5879DBE220A2A3D9009E90CE /* ImageMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageMarkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +142,14 @@
 				5879DBC720A205AA009E90CE /* ScrollViewShotViewController.m */,
 				5879DBC920A205B4009E90CE /* WebViewShotViewController.h */,
 				5879DBCA20A205B4009E90CE /* WebViewShotViewController.m */,
+				5879DBDE20A2A152009E90CE /* TableViewController.h */,
+				5879DBDF20A2A152009E90CE /* TableViewController.m */,
 				5879DBCC20A205C5009E90CE /* WKWebViewShotVC.h */,
 				5879DBCD20A205C5009E90CE /* WKWebViewShotVC.m */,
 				5879DBCF20A205D2009E90CE /* ImageComposeVC.h */,
 				5879DBD020A205D2009E90CE /* ImageComposeVC.m */,
+				5879DBE120A2A3D9009E90CE /* ImageMarkViewController.h */,
+				5879DBE220A2A3D9009E90CE /* ImageMarkViewController.m */,
 				5879DBD220A205DE009E90CE /* ShotImageViewVC.h */,
 				5879DBD320A205DE009E90CE /* ShotImageViewVC.m */,
 				5879DBD520A205EB009E90CE /* ClearImageViewVC.h */,
@@ -224,6 +234,7 @@
 			files = (
 				5879DBA420A1916E009E90CE /* ViewController.m in Sources */,
 				5879DBD420A205DE009E90CE /* ShotImageViewVC.m in Sources */,
+				5879DBE020A2A152009E90CE /* TableViewController.m in Sources */,
 				5879DBAF20A1916E009E90CE /* main.m in Sources */,
 				5879DBC120A1FF12009E90CE /* UIScrollView+LVShot.m in Sources */,
 				5879DBC820A205AA009E90CE /* ScrollViewShotViewController.m in Sources */,
@@ -238,6 +249,7 @@
 				5879DBD720A205EB009E90CE /* ClearImageViewVC.m in Sources */,
 				5879DBBB20A1AFAE009E90CE /* UIView+LVShot.m in Sources */,
 				5879DBBE20A1F069009E90CE /* WKWebView+LVShot.m in Sources */,
+				5879DBE320A2A3D9009E90CE /* ImageMarkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

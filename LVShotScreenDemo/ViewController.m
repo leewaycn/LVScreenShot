@@ -34,11 +34,14 @@
                    @"scollView 截屏(长图)",
                    @"web 截屏(长图)",
                    @"wkWebView 截图（生成长图）",
+                  @"TableView截图",
                    @"多图片图片合成（在图片上加logo)",
                    @"给截图打上标签，文本，裁剪，圆角",
-                  @"截取图片的任意部分",@"图片擦除😜",
+                  @"截取图片的任意部分",
+                  @"图片擦除😜",
                    @"图片滤镜--怀旧，黑白，岁月，烙黄，冲印,...",
-                   @"图片滤镜(高级)--饱和度，高斯模糊，老电影"];
+                   @"图片滤镜(高级)--饱和度，高斯模糊，老电影"
+                  ];
 
                   [self.tableView reloadData];
 
@@ -47,11 +50,14 @@
                      @"ScrollViewShotViewController",
                      @"WebViewShotViewController",
                      @"WKWebViewShotVC",
+                     @"TableViewController",
                      @"ImageComposeVC",
+                     @"ImageMarkViewController",
                      @"ShotImageViewVC",
                      @"ClearImageViewVC",
                      @"ImageFilterVC",
-                     @"SeniorImageFilter"];
+                     @"SeniorImageFilter"
+                     ];
 
 
     [[LVManager share] asyn_tailorImageWithimageName:[UIImage imageNamed:@""]  CompletedBlock:^(UIImage *newImage) {
