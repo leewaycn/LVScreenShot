@@ -186,12 +186,12 @@
                   moduleName = "LVShotScreenDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kongyoufu/Lewis/Develops/LVShotScreenDemo/LVShotScreenDemo/ViewController.m"
-                  timestampString = "547529701.539678"
+                  timestampString = "547542841.290536"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "788">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "765">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -201,14 +201,30 @@
                   moduleName = "LVShotScreenDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kongyoufu/Lewis/Develops/LVShotScreenDemo/LVShotScreenDemo/ViewController.m"
-                  timestampString = "547529701.541356"
+                  timestampString = "547542841.2938"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "56">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LVShotScreenDemo/Examples/ShotImageViewVC.m"
+            timestampString = "547547847.106434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-startpanTouch:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

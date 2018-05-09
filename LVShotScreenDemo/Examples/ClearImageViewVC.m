@@ -7,19 +7,84 @@
 //
 
 #import "ClearImageViewVC.h"
+#import "UIImage+LVManager.h"
 
 @interface ClearImageViewVC ()
+    {
+        CGFloat height;
+        CGFloat width;
+        UIImageView *testImageview;
+    }
+
+    @property (nonatomic,strong)UIImageView *bottomImageView;
+    @property (nonatomic,strong)UIImageView *clearImageView;
+
 
 @end
 
 @implementation ClearImageViewVC
 
+-(UIImageView*)bottomImageView{
+    if (!_bottomImageView){
+
+        _bottomImageView = [UIImageView new];
+        _bottomImageView.image = [UIImage imageNamed:@"image"];
+        _bottomImageView.frame = CGRectMake(0, 100, width, width);
+        [self.view addSubview:_bottomImageView];
+
+    }
+    return _bottomImageView;
+}
+
+
+-(UIImageView*)clearImageView{
+    if (!_clearImageView){
+
+        _clearImageView = [UIImageView new];
+        _clearImageView.image = [UIImage imageNamed:@"logo"];
+        _clearImageView.frame = CGRectMake(0, 100, width, width);
+        [self.view addSubview:_clearImageView];
+
+    }
+    return _clearImageView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+    height = UIScreen.mainScreen.bounds.size.height;
+
+    width = UIScreen.mainScreen.bounds.size.width;
+
     self.view.backgroundColor = [UIColor whiteColor];
 
+    self.bottomImageView .userInteractionEnabled = NO;
+
+    self.clearImageView .userInteractionEnabled = YES;
+
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(clearpanTouch:)];
+
+    [self.clearImageView addGestureRecognizer:pan];
+
+
+
+
 }
+    -(void)clearpanTouch:(UIPanGestureRecognizer*)pan{
+
+        UIImageView *imageV = (UIImageView*) pan.view;
+        CGPoint clearPan = [pan locationInView:imageV];
+
+        CGRect rect = CGRectMake(clearPan.x-15, clearPan.y-15, 30, 30);
+        UIImage *newImage = [[LVManager share] clearImage:imageV Rect:rect];
+
+        imageV.image = newImage;
+        
+    }
+
+
+
+    
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
