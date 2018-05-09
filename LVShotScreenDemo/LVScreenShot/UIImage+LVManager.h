@@ -41,7 +41,7 @@
  - parameter completed:    异步完成回调(主线程回调)
  */
 
--(void)asyn_tailoringImageWithImage:(UIImage*)imageName  cornerRadius:(CGFloat)radius Block:(UIImage *(^)(UIImage *newImage))completed;
+-(void)asyn_tailoringImageWithImage:(UIImage*)imageName  cornerRadius:(CGFloat)radius Block:(void (^)(UIImage *newImage))completed;
 /**
  ** 绘图方式将图片裁剪成圆角并添加边框
  - imageName --传头头像名称

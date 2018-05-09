@@ -138,7 +138,7 @@
 
 }
 
--(void)asyn_tailoringImageWithImage:(UIImage*)imageName  cornerRadius:(CGFloat)radius Block:(UIImage *(^)(UIImage *newImage))completed{
+-(void)asyn_tailoringImageWithImage:(UIImage*)imageName  cornerRadius:(CGFloat)radius Block:(void (^)(UIImage *newImage))completed{
 
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
 
