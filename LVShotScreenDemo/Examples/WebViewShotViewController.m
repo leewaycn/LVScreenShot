@@ -103,7 +103,11 @@
             storeScrollView = [UIScrollView new];
         }
 
-        storeScrollView.contentSize = CGSizeMake(width/2, height/2*3);
+
+        CGFloat imageFakewidth = width/2;
+        CGFloat imageFakeHeight = image.size.height*imageFakewidth/image.size.width;
+
+        storeScrollView.contentSize = CGSizeMake(imageFakewidth, imageFakeHeight);
         storeScrollView.frame =CGRectMake(0, 0, width/2, height/2);
         storeScrollView.center = self.view .center;
         storeScrollView.backgroundColor = [UIColor yellowColor];
@@ -112,7 +116,7 @@
         storeImage = [UIImageView new];
         storeImage.image = image;
         [storeScrollView addSubview:storeImage];
-        storeImage.frame = CGRectMake(0, 0, width/2, height/2*3);
+        storeImage.frame = CGRectMake(0, 0, imageFakewidth, imageFakeHeight);
 
 
 
