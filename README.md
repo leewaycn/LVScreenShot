@@ -11,3 +11,5 @@ almost copy the whole codes.
 
 code mat is not very good look.
 代码排版不怎么整齐。
+
+2018.7.11 .修复了。view+的截图。
