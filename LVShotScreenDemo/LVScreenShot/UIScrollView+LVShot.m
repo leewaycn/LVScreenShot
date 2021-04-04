@@ -2,7 +2,7 @@
 //  UIScrollView+LVShot.m
 //  LVShotScreenDemo
 //
-//  Created by 孔友夫 on 2018/5/8.
+//  Created by leewaycn on 2018/5/8.
 //  Copyright © 2018年 LV. All rights reserved.
 //
 

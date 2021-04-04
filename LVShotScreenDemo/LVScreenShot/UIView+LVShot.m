@@ -2,7 +2,7 @@
 //  UIView+LVShot.m
 //  LVShotScreenDemo
 //
-//  Created by 孔友夫 on 2018/5/8.
+//  Created by leewaycn on 2018/5/8.
 //  Copyright © 2018年 LV. All rights reserved.
 //
 
@@ -35,15 +35,11 @@ static const NSString * DDGViewScreenShotKey_IsShoting = @"DDGViewScreenShotKey_
 }
 
 -(BOOL)DDGContainsWKWebView{
-
     if([self isKindOfClass:[WKWebView class]]){
-
         return YES;
     }
 
     for (UIView *sbView in self.subviews) {
-
-
         if([sbView DDGContainsWKWebView]){
             return YES;
         }
@@ -121,12 +117,5 @@ static const NSString * DDGViewScreenShotKey_IsShoting = @"DDGViewScreenShotKey_
     self.isShoting = NO;
 
     completion(shotImage);
-
-
 }
-
-
-
-    
-
 @end
